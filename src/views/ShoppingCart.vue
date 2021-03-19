@@ -191,7 +191,7 @@ export default {
         email: this.customerInfo.email,
         number: this.customerInfo.number,
         address: this.customerInfo.address,
-        transaction_total: this.finalPrice,
+        transaction_total: Math.round(this.finalPrice),
         transaction_status: "PENDING",
         transaction_details: productIds
       };
